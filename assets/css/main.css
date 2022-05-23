@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -19,7 +20,8 @@
     --text-color: #fff;
 }
 
-body {
+#home {
+    min-height: 100vh;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -38,13 +40,14 @@ body {
     }
 }
 
-h1 {
+#home h1 {
     font-family: 'poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.birth {
-    font-size: 2rem;
+#home .birth {
+    font-family: 'poppins', sans-serif;
+    font-size: 4rem;
 }
 
 thead {
@@ -70,5 +73,29 @@ thead {
     color: var(--text-color);
     transform: translatey(4px);
     box-shadow: 0px 0px 0px transparent;
-    transition: box-shadow .2s ease-out;
+    transition: box-shadow .1s ease-out;
+    border: 1px solid #B4161B;
+}
+
+.card {
+    border-color: var(--text-color);
+    background-color: transparent;
+}
+
+hr {
+    border-color: #000;
+}
+
+p {
+    text-align: justify;
+}
+
+.break img {
+    position: relative;
+    height: 100px;
+    right: 0;
+}
+
+.bot {
+    margin-bottom: 4rem;
 }
