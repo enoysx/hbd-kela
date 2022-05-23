@@ -1,0 +1,74 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font size */
+    --title-text: 2.5rem;
+    --body-text: 1rem;
+    /* color */
+    --body-color: #B4161B;
+    --shade-color: #EF5354;
+    --sec-color: #EB4D4B;
+    --text-color: #fff;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.birth {
+    font-size: 2rem;
+}
+
+thead {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.quote {
+    text-align: justify;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn {
+    padding: 5px;
+    background-color: var(--shade-color);
+    box-shadow: 4px 4px 1px var(--body-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: .5s;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    transform: translatey(4px);
+    box-shadow: 0px 0px 0px transparent;
+    transition: box-shadow .2s ease-out;
+}
